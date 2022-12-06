@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_design"
+        tools:context=".ui.MenuFragment">
+
+        <ImageView
+            android:id="@+id/menuSettings"
+            android:layout_width="180dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="180dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/settings_en" />
+
+        <ImageView
+            android:id="@+id/menuLevels"
+            android:layout_width="180dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/menuSettings"
+            app:srcCompat="@drawable/levels_en" />
+
+        <ImageView
+            android:id="@+id/menuStart"
+            android:layout_width="180dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/menuLevels"
+            app:srcCompat="@drawable/start_en" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

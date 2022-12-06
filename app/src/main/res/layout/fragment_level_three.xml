@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constLevel3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.levels.LevelThreeFragment"
+        android:background="@drawable/back_white">
+
+        <ImageView
+            android:id="@+id/lvlNum3"
+            android:layout_width="180dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/level3_en" />
+
+        <TextView
+            android:id="@+id/timerText3"
+            android:layout_width="160dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="28dp"
+            android:text="TextView"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:gravity="center"
+            app:layout_constraintEnd_toStartOf="@+id/timerNumber3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:visibility="invisible"
+            android:background="@drawable/back_timer"/>
+
+        <ImageView
+            android:id="@+id/timerNumber3"
+            android:layout_width="180dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/timerText3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/level1_en"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/pyramide3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="125dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/level3_pyramide" />
+
+        <ImageView
+            android:id="@+id/circle3a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toStartOf="@+id/circle3b"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pyramide3"
+            app:srcCompat="@drawable/level3_circles1" />
+
+        <ImageView
+            android:id="@+id/circle3b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/circle3a"
+            app:layout_constraintTop_toBottomOf="@+id/pyramide3"
+            app:srcCompat="@drawable/level3_circles2" />
+
+        <ImageView
+            android:id="@+id/circle3c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/circle3d"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/circle3a"
+            app:srcCompat="@drawable/level3_circles3" />
+
+        <ImageView
+            android:id="@+id/circle3d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/circle3c"
+            app:layout_constraintTop_toBottomOf="@+id/circle3b"
+            app:srcCompat="@drawable/level3_circles4" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/popUpMenu3"
+            android:layout_width="310dp"
+            android:layout_height="275dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/popup_menu"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pyramide3">
+
+            <ImageView
+                android:id="@+id/nextLevel3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/next_level_en" />
+
+            <ImageView
+                android:id="@+id/backMenu3"
+                android:layout_width="230dp"
+                android:layout_height="80dp"
+                android:layout_marginBottom="40dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/menu_en" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

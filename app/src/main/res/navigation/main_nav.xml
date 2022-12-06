@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/menuFragment">
+
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.android.multicolored_circles.ui.MenuFragment"
+        android:label="MenuFragment"
+        tools:layout="@layout/fragment_menu">
+        <action
+            android:id="@+id/action_menuFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_levelsFragment"
+            app:destination="@id/levelsFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_levelOneFragment"
+            app:destination="@id/levelOneFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.android.multicolored_circles.ui.SettingsFragment"
+        android:label="SettingsFragment"
+        tools:layout="@layout/fragment_settings">
+        <action
+            android:id="@+id/action_settingsFragment_to_menuFragment"
+            app:destination="@id/menuFragment"
+            app:popUpTo="@id/settingsFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/levelsFragment"
+        android:name="com.android.multicolored_circles.ui.LevelsFragment"
+        android:label="LevelsFragment"
+        tools:layout="@layout/fragment_levels">
+        <action
+            android:id="@+id/action_levelsFragment_to_menuFragment"
+            app:destination="@id/menuFragment"
+            app:popUpTo="@id/levelsFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_levelsFragment_to_levelOneFragment"
+            app:destination="@id/levelOneFragment"
+            app:popUpTo="@id/levelsFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_levelsFragment_to_levelTwoFragment"
+            app:destination="@id/levelTwoFragment"
+            app:popUpTo="@id/levelsFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_levelsFragment_to_levelThreeFragment"
+            app:destination="@id/levelThreeFragment"
+            app:popUpTo="@id/levelsFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_levelsFragment_to_levelFourFragment"
+            app:destination="@id/levelFourFragment"
+            app:popUpTo="@id/levelsFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_levelsFragment_to_levelFiveFragment"
+            app:destination="@id/levelFiveFragment"
+            app:popUpTo="@id/levelsFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/levelOneFragment"
+        android:name="com.android.multicolored_circles.ui.levels.LevelOneFragment"
+        android:label="LevelOneFragment"
+        tools:layout="@layout/fragment_level_one">
+        <action
+            android:id="@+id/action_levelOneFragment_to_levelTwoFragment"
+            app:destination="@id/levelTwoFragment"
+            app:popUpTo="@id/levelOneFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_levelOneFragment_to_menuFragment"
+            app:destination="@id/menuFragment"
+            app:popUpTo="@id/levelOneFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/levelTwoFragment"
+        android:name="com.android.multicolored_circles.ui.levels.LevelTwoFragment"
+        android:label="LevelTwoFragment"
+        tools:layout="@layout/fragment_level_two">
+        <action
+            android:id="@+id/action_levelTwoFragment_to_levelThreeFragment"
+            app:destination="@id/levelThreeFragment"
+            app:popUpTo="@id/levelTwoFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_levelTwoFragment_to_menuFragment"
+            app:destination="@id/menuFragment"
+            app:popUpTo="@id/levelTwoFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/levelThreeFragment"
+        android:name="com.android.multicolored_circles.ui.levels.LevelThreeFragment"
+        android:label="LevelThreeFragment"
+        tools:layout="@layout/fragment_level_three">
+        <action
+            android:id="@+id/action_levelThreeFragment_to_levelFourFragment"
+            app:destination="@id/levelFourFragment"
+            app:popUpTo="@id/levelThreeFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_levelThreeFragment_to_menuFragment"
+            app:destination="@id/menuFragment"
+            app:popUpTo="@id/levelThreeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/levelFourFragment"
+        android:name="com.android.multicolored_circles.ui.levels.LevelFourFragment"
+        android:label="LevelFourFragment"
+        tools:layout="@layout/fragment_level_four">
+        <action
+            android:id="@+id/action_levelFourFragment_to_levelFiveFragment"
+            app:destination="@id/levelFiveFragment"
+            app:popUpTo="@id/levelFourFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_levelFourFragment_to_menuFragment"
+            app:destination="@id/menuFragment"
+            app:popUpTo="@id/levelFourFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/levelFiveFragment"
+        android:name="com.android.multicolored_circles.ui.levels.LevelFiveFragment"
+        android:label="LevelFiveFragment"
+        tools:layout="@layout/fragment_level_five">
+        <action
+            android:id="@+id/action_levelFiveFragment_to_menuFragment"
+            app:destination="@id/menuFragment"
+            app:popUpTo="@id/levelFiveFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_levelFiveFragment_to_menuFragment2"
+            app:destination="@id/menuFragment"
+            app:popUpTo="@id/levelFiveFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+</navigation>

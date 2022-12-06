@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_design"
+        tools:context=".ui.LevelsFragment">
+
+        <ImageView
+            android:id="@+id/lev1"
+            android:layout_width="180dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="60dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/level1_en" />
+
+        <ImageView
+            android:id="@+id/lev2"
+            android:layout_width="180dp"
+            android:layout_height="75dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lev1"
+            app:srcCompat="@drawable/level2_en" />
+
+        <ImageView
+            android:id="@+id/lev3"
+            android:layout_width="180dp"
+            android:layout_height="75dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lev2"
+            app:srcCompat="@drawable/level3_en" />
+
+        <ImageView
+            android:id="@+id/lev4"
+            android:layout_width="180dp"
+            android:layout_height="75dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lev3"
+            app:srcCompat="@drawable/level4_en" />
+
+        <ImageView
+            android:id="@+id/lev5"
+            android:layout_width="180dp"
+            android:layout_height="75dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lev4"
+            app:srcCompat="@drawable/level5_en" />
+
+        <ImageView
+            android:id="@+id/lev6"
+            android:layout_width="160dp"
+            android:layout_height="75dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lev5"
+            app:srcCompat="@drawable/level6_en" />
+
+        <ImageView
+            android:id="@+id/backMenuLevel"
+            android:layout_width="180dp"
+            android:layout_height="75dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lev6"
+            app:srcCompat="@drawable/menu_en" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
